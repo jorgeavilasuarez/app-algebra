@@ -1,0 +1,13 @@
+{namespace asiker.commonFactor}
+
+/**
+ * Crea un boton
+ * @param? valor
+ */
+{template .createButton}
+	{if not $valor}
+		<input type="button"  value="hola" />
+	{else}		
+		<input type="button"  onclick="alert('hola');" value="{$valor}" />		
+	 {/if}	 
+{/template}

@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<link rel="stylesheet" href="/content/styles/commonfactor/styleexercises.css" />
+<link rel="stylesheet" href="/content/styles/commonfactor/style.css" />
+<link rel="stylesheet" href="/content/styles/commonfactor/styleMatematicas.css" />
+<link rel="stylesheet" href="scripts/closure-library/closure/goog/css/dialog.css" />
+<link rel="stylesheet" href="scripts/closure-library/closure/goog/css/custombutton.css" />
+<script type="text/javascript" src="scripts/jquery/js/jquery-1.7.2.min.js" ></script>
+<script type="text/javascript" src="scripts/closure-library/closure/goog/base.js" ></script>
+<!-- <script type="text/javascript" src="scripts/commonfactor/Dialog.js" ></script>-->
+<!--<script type="text/javascript" src="scripts/commonfactor/Decorate.js" ></script>-->
+<!-- <script type="text/javascript" src="scripts/commonfactor/Button.js" ></script>-->
+<!--<script type="text/javascript" src="scripts/commonfactor/custombutton.js" ></script>-->
+
+
+
+<script type="text/javascript">
+//var contador = 0;
+$.ajaxSetup({
+  cache: true,
+  async:false
+});
+//$.holdReady(true);
+goog.global.CLOSURE_IMPORT_SCRIPT = function(src){ 
+
+/*$.ajaxSetup({
+  cache: true,
+  async:false
+});	*/
+//$.holdReady(true);	
+	$.getScript(src,function(data,dos,tres){
+		//contador++;
+		//if(src == 'http://localhost:8087/scripts/closure-library/closure/goog/ui/custombutton.js'){
+			//alert(src);
+			//$.holdReady(false);
+		//}
+		
+		console.log(src);	
+		//cargo(src);
+		
+	});
+	
+	//return cargo;
+}
+//goog.ENABLE_DEBUG_LOADER = false;
+
+	
+</script>
+<script type="text/javascript">
+	goog.require('goog.ui.CustomButton');
+	
+	function verboton(){	
+		
+		//	alert(rsultado);
+		
+	}
+	/*dialog = new goog.ui.Dialog();
+	dialog.setContent("hola mundo");
+	dialog.setVisible(true);*/
+	
+	 	//var button = new goog.ui.Button("HOLA");	
+		//button.decorate(goog.dom.getElement('boton'));
+		//goog.events.listen(button, goog.ui.Component.EventType.ACTION,function(e){
+			//window.alert("hola");
+		//});	 
+		$(function(){
+		//alert("todo cargado");
+				var button1 = goog.ui.decorate(goog.dom.getElement('boton'));
+				  button1.setDispatchTransitionEvents(goog.ui.Component.State.ALL, true);      
+				  goog.events.listen(button1, goog.ui.Component.EventType.ACTION, function(){
+						
+				goog.require('goog.ui.Dialog');						
+				//alert("hola");	
+				
+				dialog = new goog.ui.Dialog();
+				//dialog.decorate(dom.getElement('dialogo'));
+				dialog.setContent("hola mundo");
+				dialog.setVisible(true);
+				  })
+		  });
+		  //var button = goog.ui.decorate(element);
+          //button1.setDispatchTransitionEvents(goog.ui.Component.State.ALL, true);
+          //cb2.push(button);
+		  
+	   //var EVENTS = goog.object.getValues(goog.ui.Component.EventType);
+  
+     // goog.events.listen(button1, goog.ui.Component.EventType.ACTION, function(){
+	 // alert("hola");
+	  //});
+		
+	</script>
+
+<!--<script type="text/javascript" src="/scripts/commonfactor/soyutils.js" ></script>-->
+
+<script type="text/javascript" src="scripts/commonfactor/jsexercises.js" ></script>
+<!-- <script type="text/javascript" src="/scripts/commonfactor/templateButton.js" ></script>-->
+ <script type="text/javascript" src="/scripts/commonfactor/functions.js" ></script>
+
+<title>Factor Común</title>
+</head>
+<body> 
+	<div id="loader" class="loading"></div>
+	<div id="imgLoading"></div>
+	<div id="wrapper">
+		<div id="head">
+			<div id="logo">
+				<h1>Factor Común</h1>
+			</div>
+		</div>
+		<div id="content">						
+			<div id="divcloseExercises">
+				<a id="closeExercises" href="javascript:void(0);">&laquo;</a>
+			</div>
+
+			<div style="clear: both;"></div>
+			<div id="ListExercices">
+				<div id="infoListExercices" class="infoListExercices">
+					<a id="closeInfo" href="javascript:void(0);">x</a>
+					<p>Para ver la solucion de click en alguno de los siguientes
+						ejercicios.</p>
+				</div>
+				<div style="clear: both;"></div>
+				<div id="examples"></div>
+			</div>
+			<div style="clear: both;"></div>
+			<div id="resultOperation"></div>
+			
+			<div id="divExercices"></div>
+			<div id="solutionFactorCommon"></div>
+			
+			<div id="templates" style="display:none;" >
+				<div class="divtableContainer">
+					<span>
+						<a class="btnClose" href ="javascript:void(0);" onclick="javascript:closeExercise(this);">Cerrar</a>
+					</span>
+					<table border="0" class="solutionResult">				
+					</table>			
+				</div>		
+			</div>        			
+			
+			<div id="containerSimplify" class="goog-custom-button">
+			<div id="infoListExercices" class="infoListExercices">
+					<a id="closeInfo" href="javascript:void(0);">x</a>
+					<p>Simplificamos para obtener el maximo comun divisor.</p>
+				</div>
+				<div style="clear: both;"></div>
+				<div  id="divResult" ></div>
+				<div style="clear:both;"></div>
+				<input type="button" id="b2" title="Tooltip extracted from title"  value="My Button"/>
+			<div id="boton"  onclick="verboton();"class="goog-custom-button" style="width:200px;">
+				<span class="stlletter">a</span><sup>2</sup><span class="stlsign">+</span><span class="stlletter">a</span><span class="stlletter">b</span>
+			</div>
+			</div>			
+			</div>
+		</div>
+		<div id="footer"></div>
+	</div>
+	
+	
+</body>
+</html>

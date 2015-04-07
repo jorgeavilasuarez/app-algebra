@@ -1,0 +1,1 @@
+java -jar D:\projects\SkyDrive\tools\templates\SoyToJsSrcCompiler.jar  --shouldProvideRequireSoyNamespaces --outputPathFormat D:\projects\SkyDrive\loscasosdefactorizacion\scripts\commonfactor\templateButton.js  D:\projects\SkyDrive\loscasosdefactorizacion\scripts\commonfactor\template.soy 

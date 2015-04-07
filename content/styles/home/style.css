@@ -1,0 +1,47 @@
+* {
+	font-family: Segoe UI Light, Segoe UI;	
+	font-weight: 100;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	background-color: white;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+#content div:hover
+{	
+	background-color: #EDF4FF;
+}
+
+#content div {
+	border-color: #E7E7E7;
+	border-style: solid;
+	border-width: 1px;
+	margin: -1px;
+	padding: 12px;
+	text-align: center;
+	
+}
+
+#content a {
+	color: black;
+	font-size: 21px;
+}
+
+#logo h1 {
+	color: #E28221;
+	font-weight: bold;
+	margin: 0;
+}
+
+#head{
+	background-color:  #F9F9F9;
+	height: 60px;
+	
+}
